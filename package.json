@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && php artisan serve",
+    "localhost": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "initialize": ""
   },
   "repository": {
     "type": "git",
@@ -13,6 +17,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amielantonio/pogodraftpick/issues"
-  },
-  "homepage": "https://github.com/amielantonio/pogodraftpick#readme"
+  }
 }
